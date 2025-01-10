@@ -23,7 +23,6 @@ function CartContextProvider({ children }) {
 
   function addItemToCart(item) {
     const arr = cartItems;
-
     const itemIndex = cartItems.findIndex((data) => data.id == item.id);
     if (itemIndex == -1) {
       arr.push({ ...item, quantity: 1 });
